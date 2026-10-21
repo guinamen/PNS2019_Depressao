@@ -1,3 +1,39 @@
+# Saídas do pipeline (relatório, logs, CSVs, figuras, resultados.rds)
+# — regeneráveis com `Rscript run_all.R`
+saida/
+
+# Microdados e qualquer derivado individual da PNS: nunca versionar
+dados/
+*.rds
+*.RData
+*.rda
+*.parquet
+*.feather
+*.zip
+PNS_*.txt
+microdados*/
+
+# Sessão do R
+.Rhistory
+.Rapp.history
+.Rproj.user/
+*.Rproj
+.Renviron
+.httr-oauth
+
+# Cache do knitr/rmarkdown, caso venha a ser usado
+*_cache/
+*_files/
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+.vscode/
+.idea/
+
 # History files
 .Rhistory
 .Rapp.history
